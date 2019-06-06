@@ -82,7 +82,7 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-    fetch('http://localhost:3000/imageurl', {
+    fetch('https://shrouded-atoll-61897.herokuapp.com/', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
